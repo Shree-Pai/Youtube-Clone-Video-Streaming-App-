@@ -6,14 +6,14 @@ export default function Navbar({ onSidebarToggle, sidebarOpen }) {
   const navigate = useNavigate()
   const [q, setQ] = useState("")
   const { theme, toggle } = useTheme()
-  const [collapsed, setCollapsed] = useState(true) // for navbar collapse (search + icons)
+  const [collapsed, setCollapsed] = useState(true) // for mobile collapse
 
   const onSubmit = (e) => {
     e.preventDefault()
     if (!q.trim()) return
     navigate(`/search?q=${encodeURIComponent(q.trim())}`)
     setQ("")
-    setCollapsed(true) // close navbar after search
+    setCollapsed(true) // close after search
   }
 
   return (
@@ -22,35 +22,18 @@ export default function Navbar({ onSidebarToggle, sidebarOpen }) {
       style={{
         background: "var(--bg)",
         borderBottom: "1px solid var(--border)",
-        zIndex: 1100, // always above sidebar
       }}
     >
       <div className="container-fluid">
         {/* Left section - Hamburger + Logo */}
         <div className="d-flex align-items-center">
-          {/* Hamburger button (works for both mobile & desktop) */}
-          <div
+          <button
             className="hamburger-btn me-3"
-            style={{
-              fontSize: "18px",
-              color: "var(--text)",
-              transition: "all 0.2s ease",
-              borderRadius: "50%",
-              width: "40px",
-              height: "40px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              cursor: "pointer",
-              userSelect: "none",
-            }}
             onClick={onSidebarToggle}
             title={sidebarOpen ? "Hide sidebar" : "Show sidebar"}
           >
             <i className="fas fa-bars"></i>
-          </div>
-
-          {/* Logo */}
+          </button>
           <a
             className="navbar-brand fw-bold d-flex align-items-center"
             href="/"
@@ -75,7 +58,7 @@ export default function Navbar({ onSidebarToggle, sidebarOpen }) {
           </a>
         </div>
 
-        {/* Bootstrap navbar toggler (for collapsing search & icons on small screens) */}
+        {/* Bootstrap navbar toggler (for small screens) */}
         <button
           className="navbar-toggler"
           type="button"
@@ -84,14 +67,14 @@ export default function Navbar({ onSidebarToggle, sidebarOpen }) {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Collapsible Content */}
+        {/* Collapsible section */}
         <div
           className={`collapse navbar-collapse ${collapsed ? "" : "show"}`}
           id="navbarContent"
         >
-          {/* Center - Search */}
+          {/* Center - Search bar */}
           <div
-            className="d-flex flex-grow-1 justify-content-start mt-2 mt-lg-0 ms-10"
+            className="d-flex flex-grow-1 justify-content-center mt-2 mt-lg-0"
             style={{ maxWidth: "600px" }}
           >
             <form className="d-flex w-100" role="search" onSubmit={onSubmit}>
@@ -133,8 +116,7 @@ export default function Navbar({ onSidebarToggle, sidebarOpen }) {
             </button>
           </div>
 
-
-          {/* Right - Action Buttons */}
+          {/* Right section */}
           <div className="d-flex align-items-center gap-3 ms-auto mt-2 mt-lg-0">
             <button
               className="btn btn-link"
