@@ -136,8 +136,8 @@ export default function Home() {
               key={index}
               className={`btn btn-sm px-3 py-2 ${cat === category.toLowerCase() ? 'active' : ''}`}
               style={{
-                background: cat === category.toLowerCase() ? '#404040' : '#272727',
-                color: 'white',
+                background: cat === category.toLowerCase() ? 'var(--category-selected)' : 'var(--category-unselected)',
+                color: 'var(--text)',
                 border: 'none',
                 borderRadius: '18px',
                 whiteSpace: 'nowrap',
