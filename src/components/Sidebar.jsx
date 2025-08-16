@@ -41,7 +41,7 @@ export default function Sidebar({ isOpen }) {
       className={`sidebar d-none d-lg-block ${isOpen ? 'sidebar-open' : 'sidebar-collapsed'}`} 
       style={{
         width: `${sidebarWidth}px`,
-        background: 'var(--bg)', 
+        // background: 'var(--bg)', 
         minHeight: '100vh',
         overflow: 'hidden',
         transition: 'width 0.3s ease'

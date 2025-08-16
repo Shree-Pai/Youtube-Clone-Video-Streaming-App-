@@ -54,16 +54,20 @@ body {
 }
 
 .sidebar {
-  background: var(--bg);
+  background: transparent !important; /* Ensure transparency */
   border-right: 1px solid var(--border);
   position: sticky;
   top: 56px;
-  height: calc(100vh - 56px);
+  height: 40px;
   padding-top: 10px;
   width: 240px;
   flex-shrink: 0;
-  transition: width 0.3s ease, transform 0.3s ease;
+  transition: width 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
   overflow: hidden;
+}
+
+.sidebar:hover {
+  background: var(--bg) !important; /* Ensure hover effect applies */
 }
 
 .sidebar-collapsed {
@@ -84,15 +88,17 @@ body {
 }
 
 .sidebar .nav-link {
-  color: var(--text);
-  border-radius: 10px;
-  margin: 0 8px;
-  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  background: var(--card);   /* 👈 give it a container background */
+  margin: 6px 8px;
   padding: 12px 16px;
+  color: var(--text);
   font-size: 14px;
   font-weight: 500;
-  white-space: nowrap;
   min-height: 48px;
+  transition: background 0.2s ease;
 }
 
 .sidebar .nav-link:hover {
@@ -102,6 +108,7 @@ body {
 .sidebar .nav-link.active {
   background: var(--active-bg);
 }
+
 
 /* Icons-only mode styling */
 .sidebar-collapsed .nav-link {
@@ -114,6 +121,23 @@ body {
   margin: 0 !important;
   font-size: 16px;
 }
+.navbar-toggler {
+  border: none;
+  background: transparent;
+  color: var(--text);
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  background: no-repeat center center;
+  background-size: 100% 100%;
+  mask: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+    no-repeat center;
+  background-color: var(--text);
+}
+
 
 main {
   flex-grow: 1;
@@ -532,19 +556,20 @@ body.light .skeleton {
 @media (max-width: 991px) {
   .sidebar {
     position: fixed;
+    top: 56px; /* below navbar */
     left: 0;
-    top: 56px;
-    z-index: 1000;
-    transform: translateX(-100%);
-    width: 240px !important;
+    height: 100%;
+    background: var(--bg);
+    z-index: 1100;
+    transform: translateX(-100%); /* hidden by default */
   }
-  
-  .sidebar-open {
-    transform: translateX(0);
+
+  .sidebar.sidebar-open {
+    transform: translateX(0); /* visible when open */
   }
-  
-  .sidebar-collapsed {
-    transform: translateX(-100%);
+
+  .sidebar.sidebar-collapsed {
+    transform: translateX(-100%); /* always hidden on mobile */
   }
   
   .app-content {
