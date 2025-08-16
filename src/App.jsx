@@ -10,11 +10,11 @@ import Search from './pages/Search.jsx'
 export default function App() {
   return (
     <ThemeProvider>
-      <div className="app-shell">
+      <div className="app-shell" style={{background: '#0f0f0f', minHeight: '100vh'}}>
         <Navbar />
-        <div className="app-content container-fluid">
+        <div className="app-content d-flex">
           <Sidebar />
-          <main className="p-3">
+          <main className="flex-grow-1">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/watch/:id" element={<Video />} />

@@ -7,13 +7,24 @@ export default function VideoCard({video}) {
       <div className="card card-video h-100">
         <div className="thumb">
           <img src={video.thumbnail} alt={video.title} loading="lazy" />
-          <span className="badge-duration">{video.duration}</span>
+          {video.duration && (
+            <span className="badge-duration">{video.duration}</span>
+          )}
         </div>
         <div className="card-body">
-          <h6 className="card-title mb-1">{video.title}</h6>
-          <div className="d-flex align-items-center gap-2">
-            <img src={video.channelAvatar} alt="" width="28" height="28" className="rounded-circle"/>
-            <div className="small meta-muted">{video.channel} • {video.views} views • {video.posted}</div>
+          <h6 className="card-title mb-2">
+            {video.title}
+          </h6>
+          <div className="d-flex align-items-start gap-2">
+            {video.channelAvatar ? (
+              <img src={video.channelAvatar} alt="" width="24" height="24" className="rounded-circle flex-shrink-0"/>
+            ) : (
+              <div className="rounded-circle bg-secondary flex-shrink-0" style={{width: 24, height: 24}}></div>
+            )}
+            <div className="meta-muted">
+              <div>{video.channel}</div>
+              <div>{video.views} • {video.posted}</div>
+            </div>
           </div>
         </div>
       </div>
