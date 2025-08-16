@@ -18,6 +18,7 @@ export default function Search() {
     }, 300)
   }, [q])
 
+  // Filter videos based on search query
   const results = useMemo(() => {
     const term = q.trim()
     if (!term) return []

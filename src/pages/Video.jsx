@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom'
 import VideoCard from '../components/VideoCard.jsx'
 import { VideoSkeleton } from '../components/Skeleton.jsx'
 
+// Custom hook for managing video likes/dislikes with localStorage persistence
 function useLikes(id) {
   const key = `likes:${id}`
   const [state, setState] = useState(() => {
@@ -51,17 +52,17 @@ export default function Video() {
     <div className="video-page-container">
       <div className="row g-4">
         <div className="col-12 col-lg-8">
-          {/* Video Player */}
+          {/* Main video player */}
           <div className="video-player-container mb-4">
             <div className="video-player-wrapper ratio ratio-16x9">
               <iframe src={video.src} title={video.title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
             </div>
           </div>
 
-          {/* Video Title */}
+          {/* Video title */}
           <h1 className="video-title mb-3">{video.title}</h1>
 
-          {/* Video Stats and Actions */}
+          {/* Video actions and stats */}
           <div className="video-actions-section mb-4">
             <div className="d-flex justify-content-between align-items-center flex-wrap">
               <div className="video-stats d-flex align-items-center gap-3">
@@ -97,7 +98,7 @@ export default function Video() {
             </div>
           </div>
 
-          {/* Channel Info and Subscribe */}
+          {/* Channel information and subscribe button */}
           <div className="channel-section mb-4 p-3 rounded">
             <div className="d-flex align-items-center justify-content-between">
               <div className="d-flex align-items-center gap-3">
@@ -113,12 +114,12 @@ export default function Video() {
             </div>
           </div>
 
-          {/* Video Description */}
+          {/* Video description */}
           <div className="video-description-section mb-4 p-3 rounded">
             <p className="mb-0">{video.description}</p>
           </div>
 
-          {/* Comments Section */}
+          {/* Comments section */}
           <div className="comments-section">
             <div className="comments-header d-flex align-items-center justify-content-between mb-3">
               <h5 className="mb-0">
@@ -134,7 +135,7 @@ export default function Video() {
               </div>
             </div>
 
-            {/* Add Comment */}
+            {/* Add new comment input */}
             <div className="add-comment-section mb-4">
               <div className="d-flex gap-3">
                 <div className="comment-avatar">
@@ -150,7 +151,7 @@ export default function Video() {
               </div>
             </div>
 
-            {/* Comments List */}
+            {/* Display existing comments */}
             {video.comments.length > 0 ? (
               <div className="comments-list">
                 {video.comments.map(c => (
@@ -178,28 +179,34 @@ export default function Video() {
                 ))}
               </div>
             ) : (
-              <div className="no-comments text-center py-4">
-                <i className="fas fa-comment-slash text-muted mb-3" style={{fontSize: '3rem'}}></i>
-                <h6 className="text-muted">No comments yet</h6>
-                <p className="text-muted small">Be the first to share your thoughts!</p>
+              <div className="text-center text-muted py-4">
+                <i className="fas fa-comments mb-3" style={{fontSize: '3rem'}}></i>
+                <p>No comments yet. Be the first to comment!</p>
               </div>
             )}
           </div>
         </div>
 
-        {/* Related Videos Sidebar */}
+        {/* Related videos sidebar */}
         <div className="col-12 col-lg-4">
-          <div className="related-videos-sidebar">
-            <h6 className="related-title mb-3">
-              <i className="fas fa-play-circle me-2"></i>
-              Related
-            </h6>
+          <div className="related-videos-section">
+            <h5 className="mb-3">
+              <i className="fas fa-list me-2"></i>
+              Related Videos
+            </h5>
             <div className="related-videos-list">
-              {related.map(v => (
-                <div key={v.id} className="related-video-item mb-3">
-                  <VideoCard video={v} />
+              {related.length > 0 ? (
+                related.map(v => (
+                  <div className="related-video-item mb-3" key={v.id}>
+                    <VideoCard video={v} />
+                  </div>
+                ))
+              ) : (
+                <div className="text-center text-muted py-4">
+                  <i className="fas fa-video mb-3" style={{fontSize: '3rem'}}></i>
+                  <p>No related videos found</p>
                 </div>
-              ))}
+              )}
             </div>
           </div>
         </div>

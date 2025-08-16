@@ -19,7 +19,7 @@ export default function Sidebar({ isOpen }) {
   const isHomePage = location.pathname === '/' || location.pathname.startsWith('/?cat=')
   const isVideoPage = location.pathname.startsWith('/watch/')
   
-  // Determine sidebar behavior based on page
+  // Determine sidebar behavior based on current page
   let sidebarWidth = 240 // default full width
   
   if (isHomePage) {

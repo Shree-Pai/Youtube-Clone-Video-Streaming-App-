@@ -1,248 +1,192 @@
 [
   {
     "id": "1",
-    "title": "Build a YouTube Clone with React in 15 Minutes",
-    "channel": "CodeCraft",
-    "channelAvatar": "https://i.pravatar.cc/48?img=12",
-    "views": "1.2M",
-    "posted": "2 days ago",
-    "duration": "15:42",
-    "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1280&auto=format&fit=crop",
-    "src": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    "description": "Learn how to build a YouTube clone UI using React, Bootstrap and Router!",
-    "category": "technology",
-    "related": [
-      "2",
-      "3",
-      "4"
-    ],
+    "title": "My Emotional Rollercoaster",
+    "channel": "CarryMinati",
+    "channelAvatar": "https://i.pravatar.cc/48?img=18",
+    "views": "10M+",
+    "posted": "4 months ago",
+    "duration": "16:00",
+    "thumbnail": "https://img.youtube.com/vi/MuXFNYfGtsI/hqdefault.jpg",
+    "src": "https://www.youtube.com/embed/MuXFNYfGtsI",
+    "description": "CarryMinati's roast-style commentary on internet drama — pure trending India.",
+    "category": "trending",
+    "related": ["8","4","5"],
     "comments": [
-      {
-        "id": "c1",
-        "user": "Riya",
-        "text": "Super helpful tutorial!",
-        "likes": 12
-      },
-      {
-        "id": "c2",
-        "user": "Aarav",
-        "text": "Loved the clean UI.",
-        "likes": 7
-      }
+      { "id": "c1", "user": "Rohit Sharma", "text": "Carry never disappoints 🔥", "likes": 250 },
+      { "id": "c2", "user": "Priya Verma", "text": "Hilarious video, watched it twice 😂", "likes": 180 },
+      { "id": "c3", "user": "Amit Singh", "text": "One of the best roasts till now!", "likes": 140 }
     ]
   },
   {
     "id": "2",
-    "title": "Top 10 Coding Productivity Tips",
-    "channel": "DevDaily",
-    "channelAvatar": "https://i.pravatar.cc/48?img=23",
-    "views": "845K",
-    "posted": "1 week ago",
-    "duration": "10:05",
-    "thumbnail": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1280&auto=format&fit=crop",
-    "src": "https://www.youtube.com/embed/oHg5SJYRHA0",
-    "description": "Boost your coding productivity with these practical tips and tools.",
-    "category": "technology",
-    "related": [
-      "1",
-      "5",
-      "3"
-    ],
+    "title": "Khalasi | Coke Studio Bharat | Aditya Gadhvi, Achint",
+    "channel": "Coke Studio Bharat",
+    "channelAvatar": "https://i.pravatar.cc/48?img=11",
+    "views": "100M+",
+    "posted": "1 year ago",
+    "duration": "03:42",
+    "thumbnail": "https://img.youtube.com/vi/t7wSjy9Lv-o/hqdefault.jpg",
+    "src": "https://www.youtube.com/embed/t7wSjy9Lv-o",
+    "description": "A smash-hit Gujarati fusion track from Coke Studio Bharat.",
+    "category": "music",
+    "related": ["1","8","12"],
     "comments": [
-      {
-        "id": "c3",
-        "user": "Neha",
-        "text": "Tip #3 changed my workflow!",
-        "likes": 3
-      }
+      { "id": "c1", "user": "Neha Patel", "text": "Proud to see Gujarati music on global stage 💖", "likes": 320 },
+      { "id": "c2", "user": "Arjun Rao", "text": "What a vibe! 🔥", "likes": 270 },
+      { "id": "c3", "user": "Sneha Sharma", "text": "This song gives goosebumps every time.", "likes": 400 }
     ]
   },
   {
     "id": "3",
-    "title": "Relaxing Lofi Beats to Study",
-    "channel": "Lofi Central",
-    "channelAvatar": "https://i.pravatar.cc/48?img=31",
-    "views": "2.4M",
-    "posted": "3 weeks ago",
-    "duration": "1:00:00",
-    "thumbnail": "https://images.unsplash.com/photo-1518773553398-650c184e0bb3?q=80&w=1280&auto=format&fit=crop",
-    "src": "https://www.youtube.com/embed/5qap5aO4i9A",
-    "description": "One hour of chill beats for focus and relaxation.",
-    "category": "music",
-    "related": [
-      "1",
-      "2",
-      "4"
-    ],
-    "comments": []
+    "title": "GTA 5 Gameplay #157",
+    "channel": "Techno Gamerz",
+    "channelAvatar": "https://i.pravatar.cc/48?img=24",
+    "views": "5M+",
+    "posted": "1 year ago",
+    "duration": "35:12",
+    "thumbnail": "https://img.youtube.com/vi/nwZeR_NGatA/hqdefault.jpg",
+    "src": "https://www.youtube.com/embed/nwZeR_NGatA",
+    "description": "Ujjwal's wildly popular GTA V series — Indian gaming at its peak.",
+    "category": "gaming",
+    "related": ["1","4","7"],
+    "comments": [
+      { "id": "c1", "user": "Rajat Mehta", "text": "Best GTA series on YouTube 🔥", "likes": 210 },
+      { "id": "c2", "user": "Kunal Singh", "text": "Ujjwal bhai OP 👑", "likes": 190 },
+      { "id": "c3", "user": "Deepak Kumar", "text": "Feels like watching a movie!", "likes": 165 }
+    ]
   },
   {
     "id": "4",
-    "title": "Epic Gaming Montage 2025",
-    "channel": "ProGamer",
-    "channelAvatar": "https://i.pravatar.cc/48?img=44",
-    "views": "540K",
-    "posted": "5 days ago",
-    "duration": "8:20",
-    "thumbnail": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1280&auto=format&fit=crop",
-    "src": "https://www.youtube.com/embed/9bZkp7q19f0",
-    "description": "A montage of the best gaming moments this year.",
-    "category": "gaming",
-    "related": [
-      "3",
-      "2"
-    ],
-    "comments": []
+    "title": "100 Hours of POCO F7 Testing in 22 Minutes!",
+    "channel": "Tech Burner",
+    "channelAvatar": "https://i.pravatar.cc/48?img=13",
+    "views": "1M+",
+    "posted": "recently",
+    "duration": "22:00",
+    "thumbnail": "https://img.youtube.com/vi/AeSm3P-7xU0/hqdefault.jpg",
+    "src": "https://www.youtube.com/embed/AeSm3P-7xU0",
+    "description": "Tech Burner's rapid-fire, real-world stress test of the POCO F7.",
+    "category": "technology",
+    "related": ["5","7","1"],
+    "comments": [
+      { "id": "c1", "user": "Suresh Yadav", "text": "Loved the fast-paced editing 👌", "likes": 120 },
+      { "id": "c2", "user": "Akash Gupta", "text": "Tech Burner's reviews are always fun 🔥", "likes": 160 },
+      { "id": "c3", "user": "Ramesh", "text": "This guy makes tech entertaining 😁", "likes": 140 }
+    ]
   },
   {
     "id": "5",
-    "title": "Top 10 Tech Gadgets You Need",
-    "channel": "TechTalk",
-    "channelAvatar": "https://i.pravatar.cc/48?img=7",
-    "views": "1.8M",
-    "posted": "1 month ago",
-    "duration": "12:30",
-    "thumbnail": "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1280&auto=format&fit=crop",
-    "src": "https://www.youtube.com/embed/3JZ_D3ELwOQ",
-    "description": "A rundown of the coolest tech gadgets available now.",
-    "category": "technology",
-    "related": [
-      "1",
-      "2",
-      "4"
-    ],
-    "comments": []
+    "title": "Superfast 100 | Aaj Tak",
+    "channel": "Aaj Tak",
+    "channelAvatar": "https://i.pravatar.cc/48?img=21",
+    "views": "500K+",
+    "posted": "today",
+    "duration": "18:00",
+    "thumbnail": "https://img.youtube.com/vi/HSaJlHQFaT0/hqdefault.jpg",
+    "src": "https://www.youtube.com/embed/HSaJlHQFaT0",
+    "description": "100 quick headlines covering India and world news.",
+    "category": "news",
+    "related": ["4","7","9"],
+    "comments": [
+      { "id": "c1", "user": "Ritika", "text": "Best way to get news quickly 👍", "likes": 95 },
+      { "id": "c2", "user": "Shivam", "text": "Covers everything in short time 👌", "likes": 80 },
+      { "id": "c3", "user": "Anil Kumar", "text": "Daily dose of headlines!", "likes": 110 }
+    ]
   },
   {
     "id": "6",
-    "title": "Latest Tech News - AI Breakthroughs 2024",
-    "channel": "Tech News Daily",
-    "channelAvatar": "https://i.pravatar.cc/48?img=15",
-    "views": "789K",
-    "posted": "2 days ago",
-    "duration": "18:45",
-    "thumbnail": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=1280&auto=format&fit=crop",
-    "src": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    "description": "Breaking news about the latest AI developments and breakthroughs.",
-    "category": "news",
-    "related": [
-      "1",
-      "2",
-      "5"
-    ],
-    "comments": []
+    "title": "OVAL DAY 3: Last Ball Siraj Magic Gives India Golden Chance",
+    "channel": "Sports Tak",
+    "channelAvatar": "https://i.pravatar.cc/48?img=26",
+    "views": "1M+",
+    "posted": "recently",
+    "duration": "14:58",
+    "thumbnail": "https://img.youtube.com/vi/PHkO8x59cy4/hqdefault.jpg",
+    "src": "https://www.youtube.com/embed/PHkO8x59cy4",
+    "description": "Indian sports analysis and updates — cricket focus.",
+    "category": "sports",
+    "related": ["5","3","9"],
+    "comments": [
+      { "id": "c1", "user": "Anjali", "text": "Siraj is magic on the field 🔥", "likes": 300 },
+      { "id": "c2", "user": "Puneet", "text": "Great analysis by Sports Tak 👌", "likes": 220 },
+      { "id": "c3", "user": "Rajesh", "text": "India's bowling attack is 🔥🔥🔥", "likes": 260 }
+    ]
   },
   {
     "id": "7",
-    "title": "Premier League Highlights - Matchday 25",
-    "channel": "Football Central",
-    "channelAvatar": "https://i.pravatar.cc/48?img=22",
-    "views": "1.9M",
-    "posted": "1 day ago",
-    "duration": "22:15",
-    "thumbnail": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1280&auto=format&fit=crop",
-    "src": "https://www.youtube.com/embed/9bZkp7q19f0",
-    "description": "All the goals and highlights from this week's Premier League matches.",
-    "category": "sports",
-    "related": [
-      "4",
-      "8"
-    ],
-    "comments": []
+    "title": "ReactJS Tutorial for Beginners (2.5 Hours)",
+    "channel": "Apna College",
+    "channelAvatar": "https://i.pravatar.cc/48?img=32",
+    "views": "10M+",
+    "posted": "2 years ago",
+    "duration": "02:35:00",
+    "thumbnail": "https://img.youtube.com/vi/gY5sGvq-8h8/hqdefault.jpg",
+    "src": "https://www.youtube.com/embed/gY5sGvq-8h8",
+    "description": "Full React crash course in Hindi by Apna College.",
+    "category": "education",
+    "related": ["4","1","3"],
+    "comments": [
+      { "id": "c1", "user": "Aditya", "text": "Best React tutorial in Hindi 🙌", "likes": 480 },
+      { "id": "c2", "user": "Sakshi", "text": "Thanks Anuj Sir for such clear teaching.", "likes": 420 },
+      { "id": "c3", "user": "Manoj", "text": "Helped me crack my internship interview!", "likes": 360 }
+    ]
   },
   {
     "id": "8",
-    "title": "Mathematics for Beginners - Complete Course",
-    "channel": "Math Academy",
-    "channelAvatar": "https://i.pravatar.cc/48?img=33",
-    "views": "2.4M",
-    "posted": "1 week ago",
-    "duration": "45:30",
-    "thumbnail": "https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=1280&auto=format&fit=crop",
-    "src": "https://www.youtube.com/embed/5qap5aO4i9A",
-    "description": "A comprehensive introduction to mathematics for beginners.",
-    "category": "education",
-    "related": [
-      "1",
-      "2",
-      "6"
-    ],
-    "comments": []
+    "title": "MitronPolitan | Official Trailer",
+    "channel": "The Viral Fever",
+    "channelAvatar": "https://i.pravatar.cc/48?img=29",
+    "views": "5M+",
+    "posted": "7 months ago",
+    "duration": "01:44",
+    "thumbnail": "https://img.youtube.com/vi/zzky2D01M2A/hqdefault.jpg",
+    "src": "https://www.youtube.com/embed/zzky2D01M2A",
+    "description": "TVF's slice-of-life weekly show — trailer.",
+    "category": "entertainment",
+    "related": ["1","2","9"],
+    "comments": [
+      { "id": "c1", "user": "Rohit", "text": "TVF never fails with content 🙌", "likes": 200 },
+      { "id": "c2", "user": "Meena", "text": "Excited for the full series!", "likes": 170 },
+      { "id": "c3", "user": "Dev", "text": "Looks promising 🔥", "likes": 190 }
+    ]
   },
   {
     "id": "9",
-    "title": "Hollywood Blockbusters 2024 Review",
-    "channel": "Movie Central",
-    "channelAvatar": "https://i.pravatar.cc/48?img=45",
-    "views": "3.1M",
-    "posted": "3 days ago",
-    "duration": "28:20",
-    "thumbnail": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1280&auto=format&fit=crop",
-    "src": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    "description": "Review of the biggest movies and entertainment releases this year.",
-    "category": "entertainment",
-    "related": [
-      "3",
-      "6",
-      "10"
-    ],
-    "comments": []
+    "title": "Chandrayaan-3 Mission Soft-landing — LIVE Telecast",
+    "channel": "ISRO Official",
+    "channelAvatar": "https://i.pravatar.cc/48?img=5",
+    "views": "80M+",
+    "posted": "1 year ago",
+    "duration": "01:45:00",
+    "thumbnail": "https://img.youtube.com/vi/DLA_64yz8Ss/hqdefault.jpg",
+    "src": "https://www.youtube.com/embed/DLA_64yz8Ss",
+    "description": "Historic Moon south-pole landing stream from ISRO.",
+    "category": "science",
+    "related": ["5","4","7"],
+    "comments": [
+      { "id": "c1", "user": "Kiran", "text": "Proud moment for India 🇮🇳", "likes": 1000 },
+      { "id": "c2", "user": "Rahul", "text": "History created! 🚀", "likes": 920 },
+      { "id": "c3", "user": "Sneha", "text": "Got goosebumps watching this live.", "likes": 850 }
+    ]
   },
   {
     "id": "10",
-    "title": "Quantum Physics Explained Simply",
-    "channel": "Science Hub",
-    "channelAvatar": "https://i.pravatar.cc/48?img=28",
-    "views": "1.5M",
-    "posted": "2 weeks ago",
-    "duration": "32:15",
-    "thumbnail": "https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=1280&auto=format&fit=crop",
-    "src": "https://www.youtube.com/embed/3JZ_D3ELwOQ",
-    "description": "Understanding quantum physics made easy with simple explanations.",
-    "category": "science",
-    "related": [
-      "8",
-      "6",
-      "1"
-    ],
-    "comments": []
-  },
-  {
-    "id": "11",
-    "title": "Trending: Viral Dance Challenge 2024",
-    "channel": "Trend Central",
-    "channelAvatar": "https://i.pravatar.cc/48?img=19",
-    "views": "4.2M",
-    "posted": "5 hours ago",
-    "duration": "5:30",
-    "thumbnail": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=1280&auto=format&fit=crop",
-    "src": "https://www.youtube.com/embed/5qap5aO4i9A",
-    "description": "The latest viral dance challenge that's taking over social media.",
-    "category": "trending",
-    "related": [
-      "9",
-      "3",
-      "7"
-    ],
-    "comments": []
-  },
-  {
-    "id": "12",
-    "title": "Classical Music Masterpieces",
-    "channel": "Classical Corner",
-    "channelAvatar": "https://i.pravatar.cc/48?img=37",
-    "views": "890K",
-    "posted": "1 month ago",
-    "duration": "1:15:00",
-    "thumbnail": "https://images.unsplash.com/photo-1518773553398-650c184e0bb3?q=80&w=1280&auto=format&fit=crop",
-    "src": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    "description": "A collection of the most beautiful classical music pieces.",
-    "category": "music",
-    "related": [
-      "3",
-      "8",
-      "10"
-    ],
-    "comments": []
+    "title": "EPL 4 | R2H",
+    "channel": "Round2hell",
+    "channelAvatar": "https://i.pravatar.cc/48?img=36",
+    "views": "20M+",
+    "posted": "2 months ago",
+    "duration": "17:58",
+    "thumbnail": "https://img.youtube.com/vi/DgZ2IH1th5c/hqdefault.jpg",
+    "src": "https://www.youtube.com/embed/DgZ2IH1th5c",
+    "description": "Comedy sketch from India's mega-popular trio — good 'Home' feed pick.",
+    "category": "home",
+    "related": ["8","1","2"],
+    "comments": [
+      { "id": "c1", "user": "Jatin", "text": "R2H always makes me laugh 😂", "likes": 500 },
+      { "id": "c2", "user": "Alok", "text": "Best comedy trio in India 🔥", "likes": 420 },
+      { "id": "c3", "user": "Sonia", "text": "Can't stop rewatching this!", "likes": 390 }
+    ]
   }
 ]

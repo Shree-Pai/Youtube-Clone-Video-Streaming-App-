@@ -5,6 +5,7 @@ export default function VideoCard({video}) {
   return (
     <Link to={`/watch/${video.id}`} className="text-decoration-none text-reset">
       <div className="card card-video h-100">
+        {/* Video thumbnail with duration overlay */}
         <div className="thumb">
           <img src={video.thumbnail} alt={video.title} loading="lazy" />
           {video.duration && (
@@ -12,9 +13,11 @@ export default function VideoCard({video}) {
           )}
         </div>
         <div className="card-body">
+          {/* Video title */}
           <h6 className="card-title mb-2">
             {video.title}
           </h6>
+          {/* Channel info and video stats */}
           <div className="d-flex align-items-start gap-2">
             {video.channelAvatar ? (
               <img src={video.channelAvatar} alt="" width="24" height="24" className="rounded-circle flex-shrink-0"/>

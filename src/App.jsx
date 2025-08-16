@@ -24,10 +24,10 @@ export default function App() {
         <Navbar onSidebarToggle={toggleSidebar} sidebarOpen={sidebarOpen} />
         <div className="app-content d-flex">
           <Sidebar isOpen={sidebarOpen} />
-          {/* Mobile backdrop */}
+          {/* Mobile sidebar backdrop */}
           {sidebarOpen && (
-            <div 
-              className="sidebar-backdrop d-lg-none" 
+            <div
+              className="sidebar-backdrop d-lg-none"
               onClick={closeSidebar}
               style={{
                 position: 'fixed',

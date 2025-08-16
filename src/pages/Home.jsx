@@ -1,5 +1,4 @@
 import React, { useEffect, useMemo, useState } from 'react'
-
 import VideoCard from '../components/VideoCard.jsx'
 import { VideoSkeleton } from '../components/Skeleton.jsx'
 
@@ -14,8 +13,8 @@ export default function Home() {
 
   useEffect(() => {
     setLoading(true)
-
-    // Fetch data from videos.json
+    
+    // Fetch video data from JSON file
     fetch('/src/data/videos.json')
       .then(response => {
         if (!response.ok) {
@@ -30,15 +29,15 @@ export default function Home() {
       .catch(error => {
         console.error('Error fetching videos:', error)
         setLoading(false)
-        // Fallback to empty array if fetch fails
         setVideos([])
       })
   }, [])
 
-  // Category filter via query param
+  // Get category filter from URL query parameter
   const params = new URLSearchParams(location.search)
   const cat = params.get('cat')
 
+  // Filter videos based on selected category
   const filtered = useMemo(() => {
     if (!cat) return videos
     return videos.filter(v => v.category === cat)
@@ -46,7 +45,7 @@ export default function Home() {
 
   return (
     <div className="container-fluid">
-      {/* Category Filters */}
+      {/* Category filter buttons */}
       <div className="category-filters mb-4" style={{overflowX: 'auto'}}>
         <div className="d-flex gap-2" style={{minWidth: 'max-content'}}>
           {categories.map((category, index) => (
@@ -77,7 +76,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Videos Grid */}
+      {/* Video grid display */}
       <div className="videos-grid">
         <div className="row g-3">
           {loading && Array.from({length:8}).map((_,i)=>(
