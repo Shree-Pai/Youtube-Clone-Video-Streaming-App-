@@ -1,0 +1,116 @@
+[
+  {
+    "id": "1",
+    "title": "Build a YouTube Clone with React in 15 Minutes",
+    "channel": "CodeCraft",
+    "channelAvatar": "https://i.pravatar.cc/48?img=12",
+    "views": "1.2M",
+    "posted": "2 days ago",
+    "duration": "15:42",
+    "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1280&auto=format&fit=crop",
+    "src": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "description": "Learn how to build a YouTube clone UI using React, Bootstrap and Router!",
+    "category": "technology",
+    "related": [
+      "2",
+      "3",
+      "4"
+    ],
+    "comments": [
+      {
+        "id": "c1",
+        "user": "Riya",
+        "text": "Super helpful tutorial!",
+        "likes": 12
+      },
+      {
+        "id": "c2",
+        "user": "Aarav",
+        "text": "Loved the clean UI.",
+        "likes": 7
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Top 10 Coding Productivity Tips",
+    "channel": "DevDaily",
+    "channelAvatar": "https://i.pravatar.cc/48?img=23",
+    "views": "845K",
+    "posted": "1 week ago",
+    "duration": "10:05",
+    "thumbnail": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1280&auto=format&fit=crop",
+    "src": "https://www.youtube.com/embed/oHg5SJYRHA0",
+    "description": "Boost your coding productivity with these practical tips and tools.",
+    "category": "technology",
+    "related": [
+      "1",
+      "5",
+      "3"
+    ],
+    "comments": [
+      {
+        "id": "c3",
+        "user": "Neha",
+        "text": "Tip #3 changed my workflow!",
+        "likes": 3
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Relaxing Lofi Beats to Study",
+    "channel": "Lofi Central",
+    "channelAvatar": "https://i.pravatar.cc/48?img=31",
+    "views": "2.4M",
+    "posted": "3 weeks ago",
+    "duration": "1:00:00",
+    "thumbnail": "https://images.unsplash.com/photo-1518773553398-650c184e0bb3?q=80&w=1280&auto=format&fit=crop",
+    "src": "https://www.youtube.com/embed/5qap5aO4i9A",
+    "description": "One hour of chill beats for focus and relaxation.",
+    "category": "music",
+    "related": [
+      "1",
+      "2",
+      "4"
+    ],
+    "comments": []
+  },
+  {
+    "id": "4",
+    "title": "Epic Gaming Montage 2025",
+    "channel": "ProGamer",
+    "channelAvatar": "https://i.pravatar.cc/48?img=44",
+    "views": "540K",
+    "posted": "5 days ago",
+    "duration": "8:20",
+    "thumbnail": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1280&auto=format&fit=crop",
+    "src": "https://www.youtube.com/embed/9bZkp7q19f0",
+    "description": "A montage of the best gaming moments this year.",
+    "category": "gaming",
+    "related": [
+      "3",
+      "2"
+    ],
+    "comments": []
+  },
+  {
+    "id": "5",
+    "title": "Top 10 Tech Gadgets You Need",
+    "channel": "TechTalk",
+    "channelAvatar": "https://i.pravatar.cc/48?img=7",
+    "views": "1.8M",
+    "posted": "1 month ago",
+    "duration": "12:30",
+    "thumbnail": "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1280&auto=format&fit=crop",
+    "src": "https://www.youtube.com/embed/3JZ_D3ELwOQ",
+    "description": "A rundown of the coolest tech gadgets available now.",
+    "category": "technology",
+    "related": [
+      "1",
+      "2",
+      "4"
+    ],
+    "comments": []
+  }
+]
