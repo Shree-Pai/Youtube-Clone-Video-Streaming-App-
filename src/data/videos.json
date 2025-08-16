@@ -112,5 +112,137 @@
       "4"
     ],
     "comments": []
+  },
+  {
+    "id": "6",
+    "title": "Latest Tech News - AI Breakthroughs 2024",
+    "channel": "Tech News Daily",
+    "channelAvatar": "https://i.pravatar.cc/48?img=15",
+    "views": "789K",
+    "posted": "2 days ago",
+    "duration": "18:45",
+    "thumbnail": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=1280&auto=format&fit=crop",
+    "src": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "description": "Breaking news about the latest AI developments and breakthroughs.",
+    "category": "news",
+    "related": [
+      "1",
+      "2",
+      "5"
+    ],
+    "comments": []
+  },
+  {
+    "id": "7",
+    "title": "Premier League Highlights - Matchday 25",
+    "channel": "Football Central",
+    "channelAvatar": "https://i.pravatar.cc/48?img=22",
+    "views": "1.9M",
+    "posted": "1 day ago",
+    "duration": "22:15",
+    "thumbnail": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1280&auto=format&fit=crop",
+    "src": "https://www.youtube.com/embed/9bZkp7q19f0",
+    "description": "All the goals and highlights from this week's Premier League matches.",
+    "category": "sports",
+    "related": [
+      "4",
+      "8"
+    ],
+    "comments": []
+  },
+  {
+    "id": "8",
+    "title": "Mathematics for Beginners - Complete Course",
+    "channel": "Math Academy",
+    "channelAvatar": "https://i.pravatar.cc/48?img=33",
+    "views": "2.4M",
+    "posted": "1 week ago",
+    "duration": "45:30",
+    "thumbnail": "https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=1280&auto=format&fit=crop",
+    "src": "https://www.youtube.com/embed/5qap5aO4i9A",
+    "description": "A comprehensive introduction to mathematics for beginners.",
+    "category": "education",
+    "related": [
+      "1",
+      "2",
+      "6"
+    ],
+    "comments": []
+  },
+  {
+    "id": "9",
+    "title": "Hollywood Blockbusters 2024 Review",
+    "channel": "Movie Central",
+    "channelAvatar": "https://i.pravatar.cc/48?img=45",
+    "views": "3.1M",
+    "posted": "3 days ago",
+    "duration": "28:20",
+    "thumbnail": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1280&auto=format&fit=crop",
+    "src": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "description": "Review of the biggest movies and entertainment releases this year.",
+    "category": "entertainment",
+    "related": [
+      "3",
+      "6",
+      "10"
+    ],
+    "comments": []
+  },
+  {
+    "id": "10",
+    "title": "Quantum Physics Explained Simply",
+    "channel": "Science Hub",
+    "channelAvatar": "https://i.pravatar.cc/48?img=28",
+    "views": "1.5M",
+    "posted": "2 weeks ago",
+    "duration": "32:15",
+    "thumbnail": "https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=1280&auto=format&fit=crop",
+    "src": "https://www.youtube.com/embed/3JZ_D3ELwOQ",
+    "description": "Understanding quantum physics made easy with simple explanations.",
+    "category": "science",
+    "related": [
+      "8",
+      "6",
+      "1"
+    ],
+    "comments": []
+  },
+  {
+    "id": "11",
+    "title": "Trending: Viral Dance Challenge 2024",
+    "channel": "Trend Central",
+    "channelAvatar": "https://i.pravatar.cc/48?img=19",
+    "views": "4.2M",
+    "posted": "5 hours ago",
+    "duration": "5:30",
+    "thumbnail": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=1280&auto=format&fit=crop",
+    "src": "https://www.youtube.com/embed/5qap5aO4i9A",
+    "description": "The latest viral dance challenge that's taking over social media.",
+    "category": "trending",
+    "related": [
+      "9",
+      "3",
+      "7"
+    ],
+    "comments": []
+  },
+  {
+    "id": "12",
+    "title": "Classical Music Masterpieces",
+    "channel": "Classical Corner",
+    "channelAvatar": "https://i.pravatar.cc/48?img=37",
+    "views": "890K",
+    "posted": "1 month ago",
+    "duration": "1:15:00",
+    "thumbnail": "https://images.unsplash.com/photo-1518773553398-650c184e0bb3?q=80&w=1280&auto=format&fit=crop",
+    "src": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "description": "A collection of the most beautiful classical music pieces.",
+    "category": "music",
+    "related": [
+      "3",
+      "8",
+      "10"
+    ],
+    "comments": []
   }
 ]

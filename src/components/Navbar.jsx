@@ -94,7 +94,7 @@ export default function Navbar({ onSidebarToggle, sidebarOpen }) {
             <i className="fas fa-bell"></i>
           </button>
           <button className="btn btn-outline-light" onClick={toggle} style={{fontSize: '14px'}}>
-            {theme === 'light' ? '🌙' : '☀️'} {theme === 'light' ? 'Dark' : 'Light'}
+            {theme === 'light' ? '🌙' : '☀️'}
           </button>
           <div className="rounded-circle bg-secondary d-flex align-items-center justify-content-center text-white fw-bold" 
                style={{width:32, height:32, fontSize: '14px'}} title="Profile">
