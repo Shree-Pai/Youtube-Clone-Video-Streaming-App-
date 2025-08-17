@@ -136,12 +136,12 @@ export default function Navbar({ onSidebarToggle, sidebarOpen }) {
 
           {/* Right - Action Buttons */}
           <div className="d-flex align-items-center gap-3 ms-auto mt-2 mt-lg-0">
-            <button
+            {/* <button
               className="btn btn-link"
               style={{ fontSize: "18px", color: "var(--text)" }}
             >
               <i className="fas fa-video"></i>
-            </button>
+            </button> */}
             <button
               className="btn btn-link"
               style={{ fontSize: "18px", color: "var(--text)" }}
