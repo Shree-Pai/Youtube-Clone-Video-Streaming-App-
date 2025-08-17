@@ -3,6 +3,9 @@
 
 A modern, responsive YouTube clone built with React that replicates the core UI and interactive features of YouTube.
 
+The app deployed in https://you-tu-be-app.netlify.app/
+Github Link - https://github.com/Shree-Pai/Youtube-Clone-Video-Streaming-App-
+
 ## 🚀 Features & Functionalities
 
 ### ✅ **Core Features Implemented:**
