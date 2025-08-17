@@ -1,0 +1,25 @@
+- pipeline: deploy_to_production
+  name: Deploy to Production
+  refs:
+  - refs/heads/main
+  events:
+  - type: PUSH
+  fail_on_prepare_env_warning: true
+  actions:
+  - action: netlify deploy --dir=. --prodIfUnlocked
+    type: NETLIFY
+    version: 20
+    site_id: you-tu-be-app
+    integration: netlify
+    execute_commands:
+    - netlify deploy --dir=. --prodIfUnlocked
+    shell: BASH
+  - action: npm run build
+    type: BUILD
+    docker_image_name: library/node
+    docker_image_tag: 22
+    execute_commands:
+    - "# yarn install"
+    - npm install
+    - npm run build
+    shell: BASH
