@@ -15,7 +15,7 @@ export default function Home() {
     setLoading(true)
     
     // Fetch video data from JSON file
-    fetch('/src/data/videos.json')
+    fetch('public/data/videos.json')
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch videos')
