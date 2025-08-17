@@ -13,9 +13,9 @@ export default function Home() {
 
   useEffect(() => {
     setLoading(true)
-    
+
     // Fetch video data from JSON file
-    fetch('/src/data/videos.json')
+    fetch('/data/videos.json')
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch videos')
@@ -46,8 +46,8 @@ export default function Home() {
   return (
     <div className="container-fluid">
       {/* Category filter buttons */}
-      <div className="category-filters mb-4" style={{overflowX: 'auto'}}>
-        <div className="d-flex gap-2" style={{minWidth: 'max-content'}}>
+      <div className="category-filters mb-4" style={{ overflowX: 'auto' }}>
+        <div className="d-flex gap-2" style={{ minWidth: 'max-content' }}>
           {categories.map((category, index) => (
             <button
               key={index}
@@ -79,7 +79,7 @@ export default function Home() {
       {/* Video grid display */}
       <div className="videos-grid">
         <div className="row g-3">
-          {loading && Array.from({length:8}).map((_,i)=>(
+          {loading && Array.from({ length: 8 }).map((_, i) => (
             <div className="col-12 col-sm-6 col-lg-4" key={i}><VideoSkeleton /></div>
           ))}
           {!loading && filtered.length === 0 && (
