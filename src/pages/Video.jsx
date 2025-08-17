@@ -47,7 +47,7 @@ export default function Video() {
   }
 
   if (!video) {
-    return <div className="p-5 text-center">Video not found. <Link to="/">Go Home</Link></div>
+    return <div className="p-5 text-center">Video not found . <Link to="/">Go Home</Link></div>
   }
 
   return (
