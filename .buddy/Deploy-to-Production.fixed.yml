@@ -12,7 +12,7 @@
     site_id: you-tu-be-app
     integration: netlify
     execute_commands:
-    - netlify deploy --dir=. --prodIfUnlocked
+    - netlify deploy --dir=dist --prod
     shell: BASH
   - action: npm run build
     type: BUILD
