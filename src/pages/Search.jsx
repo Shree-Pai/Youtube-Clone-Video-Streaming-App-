@@ -11,7 +11,8 @@ export default function Search() {
   useEffect(() => {
     setLoading(true)
     setTimeout(async () => {
-      const res = await fetch('/src/data/videos.json')
+      // ➡️ Change the fetch path here
+      const res = await fetch('/data/videos.json')
       const data = await res.json()
       setVideos(data)
       setLoading(false)
