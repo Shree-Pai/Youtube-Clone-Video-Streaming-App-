@@ -153,9 +153,8 @@ export default function Navbar({ onSidebarToggle, sidebarOpen }) {
               onClick={toggle}
               style={{ fontSize: "14px" }}
             >
-              {theme === "light" ? "D" : "L"}
+              {theme === "light" ? "🌙" : "☀️"}
             </button>
-
             <div
               className="rounded-circle bg-secondary d-flex align-items-center justify-content-center text-white fw-bold"
               style={{ width: 32, height: 32, fontSize: "14px" }}
