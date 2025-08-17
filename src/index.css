@@ -552,8 +552,6 @@ body.light .skeleton {
   }
 }
 
-
-
 /* Mobile sidebar */
 @media (max-width: 991px) {
   .sidebar {
@@ -570,15 +568,9 @@ body.light .skeleton {
     transform: translateX(0); /* visible when open */
   }
 
-  .sidebar-overlay {
-  position: fixed;
-  top: 56px;
-  left: 0;
-  width: 100%;
-  height: calc(100% - 56px);
-  background: rgba(0,0,0,0.5);
-  z-index: 1500;
-}
+  .sidebar.sidebar-collapsed {
+    transform: translateX(-100%); /* always hidden on mobile */
+  }
   
   .app-content {
     margin-left: 0 !important;
