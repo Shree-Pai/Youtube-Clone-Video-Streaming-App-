@@ -7,12 +7,12 @@ import { VideoSkeleton } from '../components/Skeleton.jsx'
 function useLikes(id) {
   const key = `likes:${id}`
   const [state, setState] = useState(() => {
-    try { return JSON.parse(localStorage.getItem(key)) || {likes:0, dislikes:0, me: null} } catch { return {likes:0, dislikes:0, me: null} }
+    try { return JSON.parse(localStorage.getItem(key)) || { likes: 0, dislikes: 0, me: null } } catch { return { likes: 0, dislikes: 0, me: null } }
   })
   useEffect(() => { localStorage.setItem(key, JSON.stringify(state)) }, [state])
-  const like = () => setState(s => ({...s, likes: s.me==='like'? s.likes-1 : s.likes + 1, dislikes: s.me==='dislike'? s.dislikes-1 : s.dislikes, me: s.me==='like'? null : 'like'}))
-  const dislike = () => setState(s => ({...s, dislikes: s.me==='dislike'? s.dislikes-1 : s.dislikes + 1, likes: s.me==='like'? s.likes-1 : s.likes, me: s.me==='dislike'? null : 'dislike'}))
-  return {state, like, dislike}
+  const like = () => setState(s => ({ ...s, likes: s.me === 'like' ? s.likes - 1 : s.likes + 1, dislikes: s.me === 'dislike' ? s.dislikes - 1 : s.dislikes, me: s.me === 'like' ? null : 'like' }))
+  const dislike = () => setState(s => ({ ...s, dislikes: s.me === 'dislike' ? s.dislikes - 1 : s.dislikes + 1, likes: s.me === 'like' ? s.likes - 1 : s.likes, me: s.me === 'dislike' ? null : 'dislike' }))
+  return { state, like, dislike }
 }
 
 export default function Video() {
@@ -24,12 +24,14 @@ export default function Video() {
   useEffect(() => {
     setLoading(true)
     setTimeout(async () => {
-      const res = await fetch('data/videos.json')
+      // ➡️ Change the fetch path here
+      const res = await fetch('/data/videos.json')
       const data = await res.json()
       setVideos(data)
       setLoading(false)
     }, 400)
   }, [id])
+
 
   const video = useMemo(() => videos.find(v => v.id === id), [videos, id])
   const related = useMemo(() => {
@@ -69,7 +71,7 @@ export default function Video() {
                 <span className="views-count">{video.views} views</span>
                 <span className="posted-time">{video.posted}</span>
               </div>
-              
+
               <div className="action-buttons d-flex align-items-center gap-2">
                 <button className="btn btn-outline-light action-btn" onClick={like}>
                   <i className="fas fa-thumbs-up me-2"></i>
@@ -102,7 +104,7 @@ export default function Video() {
           <div className="channel-section mb-4 p-3 rounded">
             <div className="d-flex align-items-center justify-content-between">
               <div className="d-flex align-items-center gap-3">
-                <img src={video.channelAvatar} alt="" width="48" height="48" className="rounded-circle channel-avatar"/>
+                <img src={video.channelAvatar} alt="" width="48" height="48" className="rounded-circle channel-avatar" />
                 <div>
                   <div className="channel-name fw-bold">{video.channel}</div>
                   <div className="subscriber-count text-muted">1.8K subscribers</div>
@@ -139,12 +141,12 @@ export default function Video() {
             <div className="add-comment-section mb-4">
               <div className="d-flex gap-3">
                 <div className="comment-avatar">
-                  <i className="fas fa-user-circle text-muted" style={{fontSize: '2rem'}}></i>
+                  <i className="fas fa-user-circle text-muted" style={{ fontSize: '2rem' }}></i>
                 </div>
                 <div className="flex-grow-1">
-                  <input 
-                    type="text" 
-                    className="form-control comment-input" 
+                  <input
+                    type="text"
+                    className="form-control comment-input"
                     placeholder="Add a comment..."
                   />
                 </div>
@@ -158,7 +160,7 @@ export default function Video() {
                   <div className="comment-item mb-3" key={c.id}>
                     <div className="d-flex gap-3">
                       <div className="comment-avatar">
-                        <i className="fas fa-user-circle text-muted" style={{fontSize: '2rem'}}></i>
+                        <i className="fas fa-user-circle text-muted" style={{ fontSize: '2rem' }}></i>
                       </div>
                       <div className="comment-content flex-grow-1">
                         <div className="comment-header mb-2">
@@ -180,7 +182,7 @@ export default function Video() {
               </div>
             ) : (
               <div className="text-center text-muted py-4">
-                <i className="fas fa-comments mb-3" style={{fontSize: '3rem'}}></i>
+                <i className="fas fa-comments mb-3" style={{ fontSize: '3rem' }}></i>
                 <p>No comments yet. Be the first to comment!</p>
               </div>
             )}
@@ -203,7 +205,7 @@ export default function Video() {
                 ))
               ) : (
                 <div className="text-center text-muted py-4">
-                  <i className="fas fa-video mb-3" style={{fontSize: '3rem'}}></i>
+                  <i className="fas fa-video mb-3" style={{ fontSize: '3rem' }}></i>
                   <p>No related videos found</p>
                 </div>
               )}
