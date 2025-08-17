@@ -15,3 +15,11 @@
     - npm install
     - npm run build
     shell: BASH
+  - action: netlify deploy --dir=dist --prod
+    type: NETLIFY
+    version: 20
+    site_id: you-tu-be-app
+    integration: netlify
+    execute_commands:
+    - netlify deploy --dir=dist --prod
+    shell: BASH
