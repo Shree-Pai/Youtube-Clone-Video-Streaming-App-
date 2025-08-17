@@ -21,7 +21,7 @@ export default function App() {
   return (
     <ThemeProvider>
       <div className="app-shell" style={{ background: 'var(--bg)', minHeight: '100vh' }}>
-        
+
         {/* Navbar (with mobile toggle button) */}
         <Navbar onSidebarToggle={toggleSidebar} sidebarOpen={sidebarOpen} />
 
@@ -47,7 +47,7 @@ export default function App() {
           )}
 
           {/* Main page content */}
-          <main className="flex-grow-1" style={{ zIndex: 1 }}>
+          <main className={`flex-grow-1 ${sidebarOpen ? 'main-shifted' : ''}`} style={{ zIndex: 1 }}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/watch/:id" element={<Video />} />
