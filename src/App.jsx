@@ -8,7 +8,7 @@ import Video from './pages/Video.jsx'
 import Search from './pages/Search.jsx'
 
 export default function App() {
-  const [sidebarOpen, setSidebarOpen] = useState(true)
+  const [sidebarOpen, setSidebarOpen] = useState(false)
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen)
@@ -20,11 +20,16 @@ export default function App() {
 
   return (
     <ThemeProvider>
-      <div className="app-shell" style={{background: 'var(--bg)', minHeight: '100vh'}}>
+      <div className="app-shell" style={{ background: 'var(--bg)', minHeight: '100vh' }}>
+        
+        {/* Navbar (with mobile toggle button) */}
         <Navbar onSidebarToggle={toggleSidebar} sidebarOpen={sidebarOpen} />
+
         <div className="app-content d-flex">
-          <Sidebar isOpen={sidebarOpen} />
-          {/* Mobile sidebar backdrop */}
+          {/* Sidebar */}
+          <Sidebar isOpen={sidebarOpen} onClose={closeSidebar} />
+
+          {/* Backdrop only in mobile when sidebar is open */}
           {sidebarOpen && (
             <div
               className="sidebar-backdrop d-lg-none"
@@ -36,11 +41,13 @@ export default function App() {
                 right: 0,
                 bottom: 0,
                 background: 'rgba(0,0,0,0.5)',
-                zIndex: 999
+                zIndex: 1040
               }}
             />
           )}
-          <main className="flex-grow-1">
+
+          {/* Main page content */}
+          <main className="flex-grow-1" style={{ zIndex: 1 }}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/watch/:id" element={<Video />} />
