@@ -91,7 +91,7 @@ export default function Navbar({ onSidebarToggle, sidebarOpen }) {
         >
           {/* Center - Search */}
           <div
-            className="d-flex flex-grow-1 justify-content-start mt-2 mt-lg-0 ms-10"
+            className="d-flex flex-grow-1 justify-content-center mt-2 mt-lg-0"
             style={{ maxWidth: "600px" }}
           >
             <form className="d-flex w-100" role="search" onSubmit={onSubmit}>
@@ -132,6 +132,7 @@ export default function Navbar({ onSidebarToggle, sidebarOpen }) {
               <i className="fas fa-microphone"></i>
             </button>
           </div>
+
 
 
           {/* Right - Action Buttons */}
